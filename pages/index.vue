@@ -1,6 +1,10 @@
 <template>
   <div>
-    <h2>Popular Movies</h2>
+    <select>
+      <option value="">Popular Movies</option>
+      <option value="">Latest Movies</option>
+      <option value="">Top Rated</option>
+    </select>
     <ul>
       <li v-for="movie in popularList" v-bind:key="movie.title">
         <NuxtLink v-bind:to="'/movie/' + movie.id">
@@ -45,5 +49,19 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+select{
+  border: none;
+  background: none;
+  color:white ;
+  font-size: 32px;
+  outline: none;
+  text-align: center;
+  width: 100%;
+}
+option{
+  background: #111;
+  border: none;
+  outline: none;
 }
 </style>
