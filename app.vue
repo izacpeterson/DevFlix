@@ -1,6 +1,14 @@
 <template>
   <div>
-    <h1>Hello World!</h1>
+    <header>
+      <h1>Devflix</h1>
+    </header>
     <NuxtPage />
   </div>
 </template>
+<style>
+* {
+  margin: 0;
+  padding: 0;
+}
+</style>
